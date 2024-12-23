@@ -68,7 +68,7 @@ Then launch the node designated to recognize ArUco Marker from camera's point of
 ```
 ros2 launch aruco_ros single.launch.py marker_size:=0.1 marker_id:=201
 ```
-Now, the reference_frame is setted to camera_optical value: the position of the aruco will be evaluated with respect to a reference with a z axis lookin at the ArUco.
+Now, the reference_frame is set to camera_optical value: the position of the aruco will be evaluated with respect to a reference with a z axis lookin at the ArUco.
 To run the controller, use the following code:
 ```
 ros2 run ros2_kdl_package ros2_kdl_vision_control --ros-args -p cmd_interface:=velocity -p task:="look-at-point"
